@@ -12,7 +12,6 @@ addons:
     - ca-certificates
 matrix:
   include:
-      dist: trusty
     - script: bundle exec rake proof_external
       env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   allow_failures:
